@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swapnil Yadav — AI/ML Researcher</title>
+
+    <meta name="description"
+        content="Swapnil Yadav — AI/ML Researcher working in Computer Vision, Deep Learning and Explainable AI." />
+
+    <link rel="canonical" href="https://isswapnil.is-a.dev/" />
+    <meta name="theme-color" content="#faf9f5" />
+    <meta name="author" content="Swapnil Yadav" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Swapnil Yadav — AI/ML Researcher" />
+    <meta property="og:description" content="Computer Vision, Deep Learning and Explainable AI." />
+    <meta property="og:url" content="https://isswapnil.is-a.dev/" />
+    <meta property="og:image" content="https://isswapnil.is-a.dev/profile-circle.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23faf9f5'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%23315b68'%3ESY%3C/text%3E%3C/svg%3E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        :root {
+            --bg: #faf9f5;
+            --paper: #faf9f5;
+            --ink: #1c2021;
+            --muted: #6d706d;
+            --line: #d5d2ca;
+            --accent: #315b68;
+            --accent-light: #e2ebed;
+            --red: #9b4b40;
+
+            --serif: "DM Serif Display", Georgia, serif;
+            --sans: "DM Sans", Arial, sans-serif;
+            --mono: "IBM Plex Mono", monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--ink);
+            font-family: var(--sans);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        /* =========================
+       PAGE
+    ========================= */
+
+        .page {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+
+            background: var(--bg);
+
+            position: relative;
+        }
+
+        /* =========================
+       TOP BAR
+    ========================= */
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 16px 65px;
+
+            border-bottom: 1px solid var(--line);
+
+            font-family: var(--mono);
+            font-size: 10px;
+
+            color: var(--muted);
+        }
+
+        .topbar-left {
+            letter-spacing: 0.08em;
+        }
+
+        .topbar-right {
+            color: var(--accent);
+        }
+
+        /* =========================
+       HERO
+    ========================= */
+
+        .hero {
+            padding: 55px 65px 50px;
+
+            display: grid;
+
+            grid-template-columns: 165px 1fr;
+
+            gap: 45px;
+
+            align-items: center;
+
+            border-bottom: 1px solid var(--line);
+        }
+
+        .hero-label {
+            font-family: var(--mono);
+
+            font-size: 11px;
+
+            color: var(--red);
+
+            letter-spacing: 0.12em;
+
+            text-transform: uppercase;
+
+            margin-bottom: 14px;
+        }
+
+        .hero h1 {
+            font-family: var(--serif);
+
+            font-size: clamp(38px, 5.2vw, 64px);
+
+            line-height: 1.08;
+
+            font-weight: 400;
+
+            letter-spacing: -0.035em;
+
+            margin-bottom: 18px;
+
+            white-space: nowrap;
+        }
+
+        .hero-description {
+            max-width: 680px;
+
+            font-size: 16px;
+
+            color: #555955;
+
+            line-height: 1.6;
+        }
+
+        .hero-meta {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px 18px;
+
+            margin-top: 22px;
+
+            font-family: var(--mono);
+
+            font-size: 10px;
+
+            color: var(--muted);
+        }
+
+        .hero-meta span::before {
+            content: "·";
+
+            color: var(--red);
+
+            margin-right: 8px;
+        }
+
+        /* =========================
+       PROFILE IMAGE
+    ========================= */
+
+        .profile-wrapper {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: flex-start;
+        }
+
+        .profile {
+            width: 165px;
+
+            height: 200px;
+
+            border: 1px solid var(--ink);
+
+            padding: 6px;
+
+            background: #e4e1d8;
+
+            position: relative;
+
+            flex-shrink: 0;
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+        .profile-caption {
+            position: absolute;
+
+            bottom: 6px;
+
+            left: 6px;
+
+            background: var(--paper);
+
+            padding: 3px 6px;
+
+            font-family: var(--mono);
+
+            font-size: 8px;
+
+            color: var(--red);
+        }
+
+        /* =========================
+       CONTENT
+    ========================= */
+
+        .content {
+            padding: 45px 65px 70px;
+        }
+
+        .section {
+            margin-bottom: 48px;
+        }
+
+        .section-heading {
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            margin-bottom: 18px;
+        }
+
+        .section-number {
+            font-family: var(--mono);
+
+            font-size: 10px;
+
+            color: var(--red);
+        }
+
+        .section-heading h2 {
+            font-family: var(--serif);
+
+            font-size: 27px;
+
+            font-weight: 400;
+        }
+
+        .section-line {
+            flex: 1;
+
+            height: 1px;
+
+            background: var(--line);
+        }
+
+        .section p {
+            font-family: Georgia, serif;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+            color: #474b47;
+
+            max-width: 850px;
+
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+       RESEARCH PROJECT
+    ========================= */
+
+        .research-project {
+            border-top: 1px solid var(--ink);
+
+            padding: 25px 0;
+        }
+
+        .project-header {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: baseline;
+
+            gap: 20px;
+        }
+
+        .project-title {
+            font-family: var(--serif);
+
+            font-size: 23px;
+
+            line-height: 1.2;
+        }
+
+        .project-date {
+            font-family: var(--mono);
+
+            font-size: 9px;
+
+            color: var(--accent);
+
+            white-space: nowrap;
+        }
+
+        .project-subtitle {
+            font-size: 11px;
+
+            color: var(--muted);
+
+            margin-top: 5px;
+        }
+
+        .project-list {
+            margin: 13px 0 0 20px;
+        }
+
+        .project-list li {
+            font-family: Georgia, serif;
+
+            font-size: 12px;
+
+            color: #484c48;
+
+            margin: 5px 0;
+
+            line-height: 1.6;
+        }
+
+        .project-result {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 16px;
+        }
+
+        .result {
+            padding: 7px 10px;
+
+            background: var(--accent-light);
+
+            border-left: 2px solid var(--accent);
+
+            font-family: var(--mono);
+
+            font-size: 9px;
+
+            color: #46575b;
+        }
+
+        .result strong {
+            color: var(--ink);
+        }
+
+        /* =========================
+       FIELD PRESENTATION
+    ========================= */
+
+        .field-box {
+            background: #252b2a;
+
+            color: #eeeae1;
+
+            padding: 25px 28px;
+
+            margin-top: 10px;
+        }
+
+        .field-label {
+            font-family: var(--mono);
+
+            color: #b8ccc9;
+
+            font-size: 9px;
+
+            letter-spacing: .1em;
+
+            text-transform: uppercase;
+
+            margin-bottom: 8px;
+        }
+
+        .field-box h3 {
+            font-family: var(--serif);
+
+            font-size: 22px;
+
+            font-weight: 400;
+
+            margin-bottom: 8px;
+        }
+
+        .field-box p {
+            color: #d1d2cc;
+
+            font-family: Georgia, serif;
+
+            font-size: 11.5px;
+
+            max-width: 800px;
+        }
+
+        /* =========================
+       PUBLICATIONS
+    ========================= */
+
+        .publication {
+            padding: 17px 0;
+
+            border-bottom: 1px solid var(--line);
+        }
+
+        .publication:first-child {
+            border-top: 1px solid var(--ink);
+        }
+
+        .publication-title {
+            font-family: Georgia, serif;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            line-height: 1.5;
+        }
+
+        .publication-meta {
+            font-size: 11px;
+
+            color: var(--muted);
+
+            margin-top: 4px;
+        }
+
+        .publication-link {
+            display: inline-block;
+
+            margin-top: 7px;
+
+            font-family: var(--mono);
+
+            font-size: 9px;
+
+            color: var(--accent);
+        }
+
+        /* =========================
+       TWO COLUMN INFORMATION
+    ========================= */
+
+        .info-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 55px;
+        }
+
+        /* =========================
+       EXPERIENCE
+    ========================= */
+
+        .experience-item {
+            padding: 14px 0;
+
+            border-bottom: 1px solid var(--line);
+        }
+
+        .experience-item:first-child {
+            border-top: 1px solid var(--ink);
+        }
+
+        .experience-title {
+            font-family: var(--serif);
+
+            font-size: 16px;
+        }
+
+        .experience-meta {
+            font-size: 11px;
+
+            color: var(--muted);
+
+            margin-top: 2px;
+        }
+
+        .experience-description {
+            font-family: Georgia, serif;
+
+            font-size: 11.5px;
+
+            color: #505450;
+
+            margin-top: 5px;
+        }
+
+        /* =========================
+       EDUCATION
+    ========================= */
+
+        .education-item {
+            padding: 12px 0;
+
+            border-bottom: 1px solid var(--line);
+        }
+
+        .education-item:first-child {
+            border-top: 1px solid var(--ink);
+        }
+
+        .degree {
+            font-family: var(--serif);
+
+            font-size: 15px;
+        }
+
+        .institution {
+            font-size: 11px;
+
+            color: var(--muted);
+        }
+
+        .education-meta {
+            font-family: var(--mono);
+
+            font-size: 9px;
+
+            color: var(--accent);
+
+            margin-top: 3px;
+        }
+
+        /* =========================
+       SKILLS
+    ========================= */
+
+        .skills {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 7px 12px;
+        }
+
+        .skill {
+            font-size: 11px;
+
+            color: #4d524f;
+
+            padding-bottom: 2px;
+
+            border-bottom: 1px dotted #aaa79e;
+        }
+
+        /* =========================
+       CERTIFICATIONS
+    ========================= */
+
+        .certification {
+            padding: 10px 0;
+
+            border-bottom: 1px solid var(--line);
+
+            font-size: 11.5px;
+
+            color: #4b504c;
+        }
+
+        .certification strong {
+            font-family: Georgia, serif;
+
+            color: var(--ink);
+        }
+
+        /* =========================
+       FOOTER
+    ========================= */
+
+        .footer {
+            border-top: 1px solid var(--ink);
+
+            padding-top: 18px;
+
+            margin-top: 30px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .footer-name {
+            font-family: var(--serif);
+
+            font-size: 24px;
+        }
+
+        .footer-contact {
+            text-align: right;
+
+            font-family: var(--mono);
+
+            font-size: 9px;
+
+            color: var(--muted);
+
+            line-height: 1.7;
+        }
+
+        .footer-contact a {
+            color: var(--accent);
+        }
+
+        /* =========================
+       RESPONSIVE
+    ========================= */
+
+        @media(max-width: 800px) {
+
+            .page {
+                width: 100%;
+                margin: 0;
+                border: none;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 45px 35px;
+            }
+
+            .hero h1 {
+                white-space: normal;
+                font-size: clamp(34px, 7vw, 50px);
+            }
+
+            .profile-wrapper {
+                justify-content: flex-start;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .content {
+                padding: 40px 40px 60px;
+            }
+
+            .topbar {
+                padding: 12px 40px;
+            }
+
+        }
+
+        @media(max-width: 500px) {
+
+            .content {
+                padding: 35px 22px 50px;
+            }
+
+            .hero {
+                padding: 40px 22px;
+            }
+
+            .topbar {
+                padding: 11px 22px;
+            }
+
+            .topbar-right {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: clamp(32px, 8.5vw, 42px);
+                line-height: 1.1;
+            }
+
+            .project-header {
+                display: block;
+            }
+
+            .project-date {
+                display: block;
+                margin-top: 4px;
+            }
+
+            .footer {
+                display: block;
+            }
+
+            .footer-contact {
+                text-align: left;
+                margin-top: 10px;
+            }
+
+        }
+
+        @media print {
+
+            body {
+                background: white;
+            }
+
+            .page {
+                width: 100%;
+                margin: 0;
+                box-shadow: none;
+                border: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- =========================
+       TOP
+  ========================== -->
+
+        <div class="topbar">
+
+            <div class="topbar-left">
+                AI / ML · COMPUTER VISION · RESEARCH
+            </div>
+
+            <div class="topbar-right">
+                MUMBAI, INDIA
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+       HERO
+  ========================== -->
+
+        <header class="hero">
+
+            <div class="profile-wrapper">
+
+                <div class="profile">
+
+                    <!-- Profile photo -->
+
+                    <img src="profile-circle.jpg" alt="Swapnil Yadav">
+
+                    <div class="profile-caption">
+                        RESEARCHER
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-main">
+
+                <div class="hero-label">
+                    AI / ML Researcher
+                </div>
+
+                <h1>
+                    Swapnil Yadav
+                </h1>
+
+                <div class="hero-description">
+
+                    I work on computer vision and applied machine learning,
+                    with a particular interest in real-time systems,
+                    deep learning, explainability and research that can
+                    operate beyond controlled laboratory environments.
+
+                </div>
+
+                <div class="hero-meta">
+
+                    <span>Junior Research Fellow — VESIT</span>
+
+                    <span>
+                        <a href="mailto:swapnilyadav.dude@gmail.com">
+                            swapnilyadav.dude@gmail.com
+                        </a>
+                    </span>
+
+                    <span>
+                        <a href="https://linkedin.com/in/swapnilyadav29" target="_blank" rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
+                    </span>
+
+                    <span>
+                        <a href="https://scholar.google.com/citations?hl=en&user=1427QOYAAAAJ" target="_blank" rel="noopener noreferrer">
+                            Google Scholar
+                        </a>
+                    </span>
+
+                    <span>
+                        +91 70218 97308
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <div class="content">
+
+
+            <!-- =========================
+         RESEARCH
+    ========================== -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <h2>
+                        Research
+                    </h2>
+
+                    <div class="section-line"></div>
+
+                </div>
+
+                <p>
+
+                    My research interests lie in computer vision, deep learning,
+                    real-time machine learning and explainable AI. I am interested
+                    in developing systems that combine multiple models and remain
+                    useful when deployed in real-world environments.
+
+                </p>
+
+                <p>
+
+                    My current work focuses on real-time surveillance and violence
+                    detection, including object detection, temporal classification,
+                    pose estimation and human-facing interfaces.
+
+                </p>
+
+            </section>
+
+
+            <!-- =========================
+         SELECTED RESEARCH
+    ========================== -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <h2>
+                        Selected Research
+                    </h2>
+
+                    <div class="section-line"></div>
+
+                </div>
+
+
+                <article class="research-project">
+
+                    <div class="project-header">
+
+                        <h3 class="project-title">
+
+                            Suraksha Drishti —
+                            Real-Time Surveillance &amp;
+                            Violence Detection
+
+                        </h3>
+
+                        <span class="project-date">
+                            AUG 2025 — PRESENT
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-subtitle">
+
+                        Computer Vision · Deep Learning · Real-Time Inference
+
+                    </div>
+
+
+                    <ul class="project-list">
+
+                        <li>
+                            Developed a multi-model computer vision pipeline
+                            combining YOLOv8n person detection, ONNX
+                            MobileNetV3-LSTM temporal classification and
+                            MediaPipe Pose Landmarker.
+                        </li>
+
+                        <li>
+                            Designed the system to detect seven threat classes
+                            within a real-time processing pipeline.
+                        </li>
+
+                        <li>
+                            Achieved approximately 28–30 FPS with
+                            90–110 ms end-to-end latency on commodity CPU hardware.
+                        </li>
+
+                        <li>
+                            Developed a FastAPI/WebSocket backend and operator
+                            interface for live detections, evidence management,
+                            mapping and dispatch workflow.
+                        </li>
+
+                        <li>
+                            Evaluated the system on a custom 320-sample
+                            CCTV-augmented test set.
+                        </li>
+
+                    </ul>
+
+
+                    <div class="project-result">
+
+                        <div class="result">
+                            Accuracy <strong>92.81%</strong>
+                        </div>
+
+                        <div class="result">
+                            F1 <strong>0.93</strong>
+                        </div>
+
+                        <div class="result">
+                            FPS <strong>28–30</strong>
+                        </div>
+
+                        <div class="result">
+                            SUS <strong>82.5 / 100</strong>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="research-project">
+
+                    <div class="project-header">
+
+                        <h3 class="project-title">
+                            Vehicle Number Plate Detection &amp; Recognition
+                        </h3>
+
+                        <span class="project-date">
+                            JUN — JUL 2022
+                        </span>
+
+                    </div>
+
+                    <div class="project-subtitle">
+                        Computer Vision · YOLO · Optical Character Recognition (OCR) · Real-Time Inference
+                    </div>
+
+                    <ul class="project-list">
+
+                        <li>
+                            Engineered an end-to-end Automated License Plate Recognition (ALPR/ANPR)
+                            pipeline utilizing YOLO for robust bounding-box localization of vehicles
+                            and registration plates across varying lighting, perspectives, and speeds.
+                        </li>
+
+                        <li>
+                            Built a dedicated OCR processing pipeline with adaptive thresholding,
+                            morphological filtering, and perspective skew-correction to accurately
+                            isolate and parse alphanumeric characters from Indian vehicle plates.
+                        </li>
+
+                        <li>
+                            Implemented syntax-checking filters and regex verification to eliminate
+                            false plate detections and automatically log recognized numbers into
+                            a timestamped incident database.
+                        </li>
+
+                        <li>
+                            Optimized the pipeline for traffic-police field utility, achieving low-latency
+                            real-time video stream processing on standard CPU workstations.
+                        </li>
+
+                    </ul>
+
+                    <div class="project-result">
+
+                        <div class="result">
+                            Plate Detection <strong>94.2%</strong>
+                        </div>
+
+                        <div class="result">
+                            OCR Accuracy <strong>~90%</strong>
+                        </div>
+
+                        <div class="result">
+                            Latency <strong>~42 ms</strong>
+                        </div>
+
+                        <div class="result">
+                            FPS <strong>22–25</strong>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- =========================
+         FIELD PRESENTATION
+    ========================== -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <h2>
+                        Field Presentation
+                    </h2>
+
+                    <div class="section-line"></div>
+
+                </div>
+
+
+                <div class="field-box">
+
+                    <div class="field-label">
+                        Wagle Estate Police Station · Thane
+                    </div>
+
+                    <h3>
+                        Suraksha Drishti — Project Presentation
+                    </h3>
+
+                    <p>
+
+                        Presented the Suraksha Drishti system to police personnel
+                        and discussed its practical surveillance applications,
+                        deployment considerations, system validation and potential
+                        areas for further development.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+         PUBLICATIONS
+    ========================== -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        04
+                    </span>
+
+                    <h2>
+                        Publications
+                    </h2>
+
+                    <div class="section-line"></div>
+
+                    <a class="publication-link" href="https://scholar.google.com/citations?hl=en&user=1427QOYAAAAJ"
+                        target="_blank" rel="noopener noreferrer" style="margin-top: 0; white-space: nowrap;">
+                        Google Scholar ↗
+                    </a>
+
+                </div>
+
+
+                <div class="publication">
+
+                    <div class="publication-title">
+
+                        Virtual Reality Horror Chronicles:
+                        Exploring Fear in Virtual Reality
+
+                    </div>
+
+                    <div class="publication-meta">
+
+                        Swapnil Yadav et al. ·
+                        Journal of Multimedia Technology &amp;
+                        Recent Advancements (JoMTRA),
+                        Vol. 11, Issue 03, pp. 32–43, 2024.
+
+                    </div>
+
+                    <a class="publication-link" href="https://stmjournals.celnet.in/jomtra/2024/virtual-reality-horror-chronicles-exploring-fear-in-virtual-reality/"
+                        target="_blank" rel="noopener noreferrer">
+                        View published article →
+                    </a>
+
+                </div>
+
+
+                <div class="publication">
+
+                    <div class="publication-title">
+
+                        Suraksha Drishti:
+                        An AI-Powered Real-Time Surveillance
+                        and Violence Detection System
+
+                    </div>
+
+                    <div class="publication-meta">
+
+                        Swapnil Yadav (Lead Author &amp; Developer),
+                        Dr. Asma Parveen (Mentor &amp; Research Guide) ·
+                        VESIT · IEEE-format research paper · 2026
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+         EXPERIENCE + EDUCATION
+    ========================== -->
+
+            <div class="info-grid">
+
+
+                <section class="section">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">
+                            05
+                        </span>
+
+                        <h2>
+                            Experience
+                        </h2>
+
+                        <div class="section-line"></div>
+
+                    </div>
+
+
+                    <div class="experience-item">
+
+                        <div class="experience-title">
+                            Junior Research Fellow
+                        </div>
+
+                        <div class="experience-meta">
+                            VESIT, Mumbai · Aug 2025 – Present
+                        </div>
+
+                        <div class="experience-description">
+
+                            Mentor final-year students during laboratory
+                            sessions and support ongoing academic research.
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="experience-item">
+
+                        <div class="experience-title">
+                            Data Analyst
+                        </div>
+
+                        <div class="experience-meta">
+                            Santosatech Pvt. Ltd. · Jun – Jul 2025
+                        </div>
+
+                        <div class="experience-description">
+
+                            Developed Power BI dashboards for revenue trends
+                            and employee-flow metrics.
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="experience-item">
+
+                        <div class="experience-title">
+                            AWS Intern — AI &amp; ML
+                        </div>
+
+                        <div class="experience-meta">
+                            Oct – Dec 2021
+                        </div>
+
+                        <div class="experience-description">
+
+                            Developed and deployed an ML project using
+                            AWS S3, EC2 and Lambda.
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- EDUCATION -->
+
+                <section class="section">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">
+                            06
+                        </span>
+
+                        <h2>
+                            Education
+                        </h2>
+
+                        <div class="section-line"></div>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div class="degree">
+                            M.Tech in Information Technology
+                        </div>
+
+                        <div class="institution">
+                            Vivekanand Education Society's Institute of Technology
+                        </div>
+
+                        <div class="education-meta">
+                            2024–2026 · CGPI 8.2 / 10
+                        </div>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div class="degree">
+                            B.E. in Information Technology
+                        </div>
+
+                        <div class="institution">
+                            K.C. College of Engineering and Management
+                        </div>
+
+                        <div class="education-meta">
+                            2020–2024 · CGPI 8.43 / 10
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- =========================
+         SKILLS
+    ========================== -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        07
+                    </span>
+
+                    <h2>
+                        Technical Skills
+                    </h2>
+
+                    <div class="section-line"></div>
+
+                </div>
+
+
+                <div class="skills">
+
+                    <span class="skill">Python</span>
+                    <span class="skill">PyTorch</span>
+                    <span class="skill">TensorFlow</span>
+                    <span class="skill">OpenCV</span>
+                    <span class="skill">YOLO</span>
+                    <span class="skill">ONNX Runtime</span>
+                    <span class="skill">MediaPipe</span>
+                    <span class="skill">Scikit-learn</span>
+                    <span class="skill">NumPy</span>
+                    <span class="skill">Pandas</span>
+                    <span class="skill">FastAPI</span>
+                    <span class="skill">Next.js</span>
+                    <span class="skill">Java</span>
+                    <span class="skill">C#</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">MySQL</span>
+                    <span class="skill">AWS</span>
+                    <span class="skill">Docker</span>
+                    <span class="skill">Kubernetes</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">Power BI</span>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+         CERTIFICATIONS
+    ========================== -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        08
+                    </span>
+
+                    <h2>
+                        Certifications
+                    </h2>
+
+                    <div class="section-line"></div>
+
+                </div>
+
+
+                <div class="certification">
+
+                    <strong>
+                        Research Methodology and IPR
+                    </strong>
+
+                    — SWAYAM / NITTTR Chennai,
+                    3-credit course, 2025.
+                    Consolidated score: 62%.
+
+                </div>
+
+
+                <div class="certification">
+
+                    <strong>
+                        Cyber Security, Tools, Techniques and
+                        Counter Measures
+                    </strong>
+
+                    — SWAYAM / Dr. Babasaheb Ambedkar
+                    Open University, 4-credit course, 2025.
+                    Consolidated score: 70%.
+
+                </div>
+
+
+                <div class="certification">
+
+                    Python Basics for Data Science ·
+                    AI for Everyone (IBM/edX) ·
+                    Supervised Machine Learning (DeepLearning.AI)
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+         INTERESTS & HOBBIES
+    ========================== -->
+
+            <section class="section">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        09
+                    </span>
+
+                    <h2>
+                        Interests &amp; Hobbies
+                    </h2>
+
+                    <div class="section-line"></div>
+
+                </div>
+
+                <p>
+                    Jogging &amp; fitness · Cycling · Listening to music · Active listening &amp; asking questions · 1st Prize, Volleyball (2024) · Active Member, DLLE Club
+                </p>
+
+            </section>
+
+
+            <!-- =========================
+         FOOT
+    ========================== -->
+
+            <footer class="footer">
+
+                <div class="footer-name">
+                    Swapnil Yadav
+                </div>
+
+                <div class="footer-contact">
+
+                    <a href="mailto:swapnilyadav.dude@gmail.com">
+                        swapnilyadav.dude@gmail.com
+                    </a>
+                    <br>
+
+                    <a href="https://linkedin.com/in/swapnilyadav29" target="_blank" rel="noopener noreferrer">
+                        linkedin.com/in/swapnilyadav29
+                    </a>
+                    <br>
+
+                    <a href="https://scholar.google.com/citations?hl=en&user=1427QOYAAAAJ" target="_blank" rel="noopener noreferrer">
+                        Google Scholar Profile
+                    </a>
+                    <br>
+
+                    Mumbai, India
+
+                </div>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
